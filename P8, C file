@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+    cin>>n;
+    long long sum=1;
+    int lardig=0;
+    while(n>0){
+        int dig= n%10;
+        if(dig !=0){
+            sum *= dig;
+        }
+        if (lardig< dig){
+            lardig=dig;
+        }
+        n/10;
+        
+    }
+    cout<<sum<<lardig<<endl;
+    return 0;
+}
